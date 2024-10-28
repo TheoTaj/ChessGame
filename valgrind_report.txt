@@ -1,0 +1,49 @@
+==8821== Memcheck, a memory error detector
+==8821== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==8821== Using Valgrind-3.23.0 and LibVEX; rerun with -h for copyright info
+==8821== Command: ./chess --noai k7/2p4p/8/8/8/8/2p4p/K7\ b\ -\ -\ 0\ 1
+==8821== 
+Evaluation = -7.200000
+
+currentZobristKey = 4737746531463174557
+
+MoveType = 1000
+Evaluation = -14.200000
+
+currentZobristKey = 2877483662677984955
+
+
+FromGETZobristKey = 2877483662677984955
+
+MoveType = 0
+Evaluation = -14.000000
+
+currentZobristKey = 1141458400690229616
+
+
+FromGETZobristKey = 1141458400690229616
+
+MoveType = 1000
+Evaluation = -21.100000
+
+currentZobristKey = 4585051974845644734
+
+
+FromGETZobristKey = 4585051974845644734
+
+libération
+Fin du programme
+==8821== 
+==8821== HEAP SUMMARY:
+==8821==     in use at exit: 1,187,859 bytes in 9,390 blocks
+==8821==   total heap usage: 294,025 allocs, 284,635 frees, 93,781,318 bytes allocated
+==8821== 
+==8821== LEAK SUMMARY:
+==8821==    definitely lost: 0 bytes in 0 blocks
+==8821==    indirectly lost: 0 bytes in 0 blocks
+==8821==      possibly lost: 0 bytes in 0 blocks
+==8821==    still reachable: 0 bytes in 0 blocks
+==8821==         suppressed: 1,184,587 bytes in 9,356 blocks
+==8821== 
+==8821== For lists of detected and suppressed errors, rerun with: -s
+==8821== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 15510290 from 2327)
