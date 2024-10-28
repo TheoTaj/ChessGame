@@ -15,51 +15,6 @@
 #define SQUARE_SIZE 125
 
 
-
-
-
-
-//new
-// void renderChessBoard(SDL_Renderer *renderer, ChessGame *game, SDL_Texture *pieceTextures[NUM_PIECE_TYPES], Player user)
-// {
-//     // Dessiner l'échiquier
-//     SDL_SetRenderDrawColor(renderer, 252, 228, 208, 190); // Combo tah lichess
-//     SDL_RenderClear(renderer);
-
-//     // Dessiner les cases noires et blanches
-//     for (int row = 0; row < BOARD_SIZE; ++row) {
-//         for (int col = 0; col < BOARD_SIZE; ++col) {
-//             if ((row + col) % 2 != 0) {
-//                 SDL_Rect rect = {OFFSET_WIDTH + col * SQUARE_SIZE, row * SQUARE_SIZE, SQUARE_SIZE, SQUARE_SIZE};
-//                 SDL_SetRenderDrawColor(renderer, 190, 143, 104, 255); // Combo tah lichess
-//                 SDL_RenderFillRect(renderer, &rect);
-//             }
-//         }
-//     }
-
-//     // Dessiner les pièces
-//     for (int row = 0; row < BOARD_SIZE; row++) {
-//         for (int col = 0; col < BOARD_SIZE; col++) {
-//             Piece piece = GetPieceOnCase(game, row, col);
-//             if (piece != EMPTY_CASE) {
-//                 int pieceIndex = getPieceTextureIndex(piece);
-
-//                 int drawRow, drawCol;
-//                 if (user == PLAYER_WHITE) {
-//                     drawRow = row;
-//                     drawCol = col;
-//                 } else {
-//                     drawRow = 7 - row;
-//                     drawCol = 7 - col;
-//                 }
-
-//                 SDL_Rect destRect = {OFFSET_WIDTH + drawCol * SQUARE_SIZE, drawRow * SQUARE_SIZE, SQUARE_SIZE, SQUARE_SIZE};
-//                 SDL_RenderCopy(renderer, pieceTextures[pieceIndex], NULL, &destRect);
-//             }
-//         }
-//     }
-// }
-
 void renderChessBoard(SDL_Renderer *renderer, ChessGame *game, SDL_Texture *pieceTextures[NUM_PIECE_TYPES], Player user)
 {
     

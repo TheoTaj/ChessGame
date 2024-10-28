@@ -678,7 +678,7 @@ double forceKingToTheEdge(ChessGame *game, Player winingPlayer)
     //et un met un malus si le roi gagnant est éloigné du roi adverse
     // bonus -= distanceBeetwennKings;
 
-    bonus += 14 - (distanceBeetwennKings);
+    bonus += (14 - (distanceBeetwennKings) ) * 1.5;
 
 
     bonus = bonus * 0.1;

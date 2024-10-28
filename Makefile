@@ -50,7 +50,7 @@ FEN = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1" # Position basi
 
 # hard checkmate
 
-# FEN = "8/3K4/4P3/8/8/8/6k1/7q w - - 0 1" #il trouve mais c'est pas le plus rapide
+FEN = "8/3K4/4P3/8/8/8/6k1/7q w - - 0 1" #il trouve mais c'est pas le plus rapide
 
 # temp
 
