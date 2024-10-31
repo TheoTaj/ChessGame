@@ -28,6 +28,8 @@
 #include "fen.h"
 #include "GMmove.h"
 
+//je fais un changement juste pour tester 
+
 void play_game(int ai_enabled, char *fen);
 
 
